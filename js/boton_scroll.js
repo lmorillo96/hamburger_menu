@@ -14,7 +14,7 @@ export default function scrollTopButton(btn) {
         }
     });
 
-    d.addEventListener("click", e => {
+    $scrollBtn.addEventListener("click", e => {
         e.preventDefault();
         w.scrollTo({
             behavior: 'smooth',
