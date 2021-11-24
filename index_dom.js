@@ -4,6 +4,7 @@ import {moveBall, shortcuts} from "./js/teclado.js";
 import countdown from "./js/coutdown.js";
 import scrollTopButton from "./js/boton_scroll.js";
 import darkTheme from "./js/theme_dark.js";
+import scrollId from "./js/scroll_id.js";
 
 const d = document;
 
@@ -17,6 +18,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "Feliz cumpleaños WebDev 🧑🏿‍💻 Has completado uno de tus objetivos. Sigue asi."
     );
     scrollTopButton(".scroll-top-btn");
+    scrollId();
 });
 
 d.addEventListener("keydown", (e) => {
