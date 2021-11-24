@@ -13,7 +13,7 @@ export default function darkTheme(btn, classDark) {
     const LightMode = () => {
         $selectors.forEach(el => el.classList.remove(classDark))
         $themeBtn.textContent = moon;
-        ls.getItem("theme", "light")
+        ls.setItem("theme", "light")
     }
 
     const DarkMode = () => {
