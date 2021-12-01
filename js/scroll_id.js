@@ -7,8 +7,7 @@ export default function scrollId() {
     links.forEach(link => {
         link.addEventListener('click', e => {
             e.preventDefault();
-
-            /* let position = d.querySelector(`${e.target.getAttribute("href")}`).offsetTop; */
+            
             let idSection = e.target.getAttribute("href")
             console.log(idSection);
             let element = d.querySelector(`${idSection}`);
@@ -18,13 +17,7 @@ export default function scrollId() {
                 block: "start",
                 behavior: "smooth",
             });
-            
-            /* w.scrollTo({
-                top: position,
-                behavior: 'smooth'
-            }); */
-            
-            /* w.scrollTo(0, position); */
+
         })
     })
 }

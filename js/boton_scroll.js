@@ -20,7 +20,5 @@ export default function scrollTopButton(btn) {
             behavior: 'smooth',
             top: 0
         });
-        /* if (e.target.matches(btn)) {
-        } */
     });
 }
