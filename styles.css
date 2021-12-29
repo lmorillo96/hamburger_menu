@@ -212,3 +212,22 @@ img {
   color: var(--main-color);
 }
 
+/*********** Network Status ***********/
+
+.online,
+.offline {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  counter-reset: #fff;
+}
+
+.offline {
+  background-color: #b71c1c;
+}
+

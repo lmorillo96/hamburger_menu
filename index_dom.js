@@ -8,6 +8,7 @@ import scrollId from "./js/scroll_id.js";
 import responsiveMedia from "./js/objeto_responsive.js";
 import responsiveTester from "./js/prueba_responsive.js";
 import userDeviceInfo from "./js/deteccion_dispositivos.js";
+import networkStatus from "./js/deteccion_red.js";
 
 const d = document;
 
@@ -40,4 +41,5 @@ d.addEventListener("keydown", (e) => {
     moveBall(e, ".ball", ".stage");
 });
 
-darkTheme(".dark-theme-btn", "dark-mode")
+darkTheme(".dark-theme-btn", "dark-mode");
+networkStatus();
